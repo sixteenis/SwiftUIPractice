@@ -11,7 +11,17 @@
 		064244FF2C85804400C9134D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 064244FE2C85804400C9134D /* Assets.xcassets */; };
 		064245022C85804400C9134D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 064245012C85804400C9134D /* Preview Assets.xcassets */; };
 		064245092C85807700C9134D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 064245082C85807700C9134D /* .gitignore */; };
-		0642450D2C8580D400C9134D /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642450C2C8580D400C9134D /* Onboarding.swift */; };
+		0642450D2C8580D400C9134D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642450C2C8580D400C9134D /* OnboardingView.swift */; };
+		064245102C8583DD00C9134D /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642450F2C8583DD00C9134D /* BaseButton.swift */; };
+		064245122C85858800C9134D /* JoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064245112C85858800C9134D /* JoinView.swift */; };
+		064245142C85895000C9134D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064245132C85895000C9134D /* Profile.swift */; };
+		064245162C858A0A00C9134D /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064245152C858A0A00C9134D /* ProfileImage.swift */; };
+		064245182C8592CD00C9134D /* CameraProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064245172C8592CD00C9134D /* CameraProfile.swift */; };
+		0642451A2C85948A00C9134D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064245192C85948A00C9134D /* MainView.swift */; };
+		0642451E2C8598C700C9134D /* MBTIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642451D2C8598C700C9134D /* MBTIButton.swift */; };
+		064245212C8599DA00C9134D /* MBTIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064245202C8599DA00C9134D /* MBTIModel.swift */; };
+		064245242C859B7F00C9134D /* ButtonWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064245232C859B7F00C9134D /* ButtonWrapper.swift */; };
+		064245282C859C0900C9134D /* profileSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064245272C859C0900C9134D /* profileSettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +30,17 @@
 		064244FE2C85804400C9134D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		064245012C85804400C9134D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		064245082C85807700C9134D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		0642450C2C8580D400C9134D /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		0642450C2C8580D400C9134D /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		0642450F2C8583DD00C9134D /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		064245112C85858800C9134D /* JoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinView.swift; sourceTree = "<group>"; };
+		064245132C85895000C9134D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		064245152C858A0A00C9134D /* ProfileImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		064245172C8592CD00C9134D /* CameraProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraProfile.swift; sourceTree = "<group>"; };
+		064245192C85948A00C9134D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0642451D2C8598C700C9134D /* MBTIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBTIButton.swift; sourceTree = "<group>"; };
+		064245202C8599DA00C9134D /* MBTIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBTIModel.swift; sourceTree = "<group>"; };
+		064245232C859B7F00C9134D /* ButtonWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWrapper.swift; sourceTree = "<group>"; };
+		064245272C859C0900C9134D /* profileSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileSettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +74,15 @@
 		064244F92C85804200C9134D /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				064245222C859B7600C9134D /* Wrapper */,
+				0642451F2C8599CE00C9134D /* Model */,
 				064244FA2C85804200C9134D /* SwiftUIPracticeApp.swift */,
-				0642450C2C8580D400C9134D /* Onboarding.swift */,
+				064245152C858A0A00C9134D /* ProfileImage.swift */,
+				0642450E2C8582D900C9134D /* Custom */,
+				0642450C2C8580D400C9134D /* OnboardingView.swift */,
+				064245112C85858800C9134D /* JoinView.swift */,
+				064245272C859C0900C9134D /* profileSettingView.swift */,
+				064245192C85948A00C9134D /* MainView.swift */,
 				064244FE2C85804400C9134D /* Assets.xcassets */,
 				064245002C85804400C9134D /* Preview Content */,
 			);
@@ -68,6 +95,33 @@
 				064245012C85804400C9134D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0642450E2C8582D900C9134D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				0642450F2C8583DD00C9134D /* BaseButton.swift */,
+				064245132C85895000C9134D /* Profile.swift */,
+				064245172C8592CD00C9134D /* CameraProfile.swift */,
+				0642451D2C8598C700C9134D /* MBTIButton.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		0642451F2C8599CE00C9134D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				064245202C8599DA00C9134D /* MBTIModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		064245222C859B7600C9134D /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				064245232C859B7F00C9134D /* ButtonWrapper.swift */,
+			);
+			path = Wrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +195,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0642450D2C8580D400C9134D /* Onboarding.swift in Sources */,
+				0642451E2C8598C700C9134D /* MBTIButton.swift in Sources */,
+				064245212C8599DA00C9134D /* MBTIModel.swift in Sources */,
+				064245122C85858800C9134D /* JoinView.swift in Sources */,
+				0642451A2C85948A00C9134D /* MainView.swift in Sources */,
+				064245162C858A0A00C9134D /* ProfileImage.swift in Sources */,
+				064245282C859C0900C9134D /* profileSettingView.swift in Sources */,
+				064245182C8592CD00C9134D /* CameraProfile.swift in Sources */,
+				064245142C85895000C9134D /* Profile.swift in Sources */,
+				0642450D2C8580D400C9134D /* OnboardingView.swift in Sources */,
+				064245102C8583DD00C9134D /* BaseButton.swift in Sources */,
+				064245242C859B7F00C9134D /* ButtonWrapper.swift in Sources */,
 				064244FB2C85804200C9134D /* SwiftUIPracticeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
