@@ -16,7 +16,7 @@ struct JoinView: View {
         MBTIModel(top: "J", bottom: "P")
     ]
     var body: some View {
-        NavigationLink(destination: profileSettingView()) {
+        NavigationLink(destination: profileSettingView(selecetProfile: .profile_1)) {
             CameraProfile(profile: .profile_1)
         }
         Spacer()

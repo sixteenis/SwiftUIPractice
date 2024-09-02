@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Profile: View {
     let profile: ProfileImage
+    let size: CGFloat
     @Binding var isSelect: Bool
     var body: some View {
         Circle()
@@ -18,10 +19,10 @@ struct Profile: View {
                     .resizable()
                     .scaledToFill()
                     .clipShape(.circle)
-                    .frame(width: 110, height: 110)
+                    .frame(width: size - 10, height: size - 10)
                     .opacity(isSelect ? 1 : 0.6)
             )
-            .frame(width: 120)
+            .frame(width: size)
         
         
         

@@ -9,12 +9,24 @@ import SwiftUI
 
 struct profileSettingView: View {
     let profileList = ProfileImage.allCases
+    let columns = Array(repeating: GridItem(.flexible()), count: 4)
+    @State var selecetProfile: ProfileImage
+    @State private var select = false
     var body: some View {
-        Text("냠냠")
+        CameraProfile(profile: .profile_0)
             .navigationTitle("PROFILE SETTING")
+        Spacer()
+            .frame(height: 50)
+        LazyVGrid(columns: columns) {
+            ForEach(profileList, id: \.image) {
+                Profile(profile: $0, size: 80, isSelect: $select)
+            }
+        } //:VSTACK
+        .padding(20)
+        Spacer()
     }
 }
 
 #Preview {
-    profileSettingView()
+    profileSettingView(selecetProfile: .profile_1)
 }
