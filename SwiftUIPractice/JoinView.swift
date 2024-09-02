@@ -27,18 +27,21 @@ struct JoinView: View {
             .padding(.horizontal, 30)
         Spacer()
             .frame(height: 50)
-        Text("MBTI")
-            .bold()
-            .font(.title)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.leading, 30)
-        HStack(spacing: 15){
-            Spacer()
-                .frame(width: 80)
-            ForEach(mbti, id: \.id) {
-                MBTIButton(mbti: $0)
+        HStack{
+            Text("MBTI")
+                .bold()
+                .font(.title3)
+                .frame(maxWidth: 300, alignment: .leading)
+                .frame(height: 100, alignment: .top)
+                .padding(.leading)
+            HStack(spacing: 15){
+                
+                ForEach(mbti, id: \.id) {
+                    MBTIButton(mbti: $0)
+                }
             }
-        }
+            .padding(.trailing)
+        } //:HSTACK
         
         Spacer()
         BaseButton(bTitlt: "완료", backColor: .gray, nextView: MainView())
