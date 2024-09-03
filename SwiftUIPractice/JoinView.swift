@@ -31,8 +31,7 @@ struct JoinView: View {
             Text("MBTI")
                 .bold()
                 .font(.title3)
-                .frame(maxWidth: 300, alignment: .leading)
-                .frame(height: 100, alignment: .top)
+                .frame(maxWidth: 300, maxHeight: 100, alignment: .topLeading)
                 .padding(.leading)
             HStack(spacing: 15){
                 

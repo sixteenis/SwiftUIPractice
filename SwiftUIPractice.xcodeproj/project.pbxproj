@@ -22,6 +22,9 @@
 		064245212C8599DA00C9134D /* MBTIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064245202C8599DA00C9134D /* MBTIModel.swift */; };
 		064245242C859B7F00C9134D /* ButtonWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064245232C859B7F00C9134D /* ButtonWrapper.swift */; };
 		064245282C859C0900C9134D /* profileSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064245272C859C0900C9134D /* profileSettingView.swift */; };
+		064245382C86F85700C9134D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064245372C86F85700C9134D /* SearchView.swift */; };
+		0642453A2C86F9A300C9134D /* UpbitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064245392C86F9A300C9134D /* UpbitAPI.swift */; };
+		0642453F2C86FA7400C9134D /* UpbitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642453E2C86FA7400C9134D /* UpbitModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		064245202C8599DA00C9134D /* MBTIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBTIModel.swift; sourceTree = "<group>"; };
 		064245232C859B7F00C9134D /* ButtonWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWrapper.swift; sourceTree = "<group>"; };
 		064245272C859C0900C9134D /* profileSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileSettingView.swift; sourceTree = "<group>"; };
+		064245372C86F85700C9134D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		064245392C86F9A300C9134D /* UpbitAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpbitAPI.swift; sourceTree = "<group>"; };
+		0642453E2C86FA7400C9134D /* UpbitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpbitModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 		064244F92C85804200C9134D /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				0642453B2C86F9A700C9134D /* Service */,
 				064245222C859B7600C9134D /* Wrapper */,
 				0642451F2C8599CE00C9134D /* Model */,
 				064244FA2C85804200C9134D /* SwiftUIPracticeApp.swift */,
@@ -83,6 +90,7 @@
 				064245112C85858800C9134D /* JoinView.swift */,
 				064245272C859C0900C9134D /* profileSettingView.swift */,
 				064245192C85948A00C9134D /* MainView.swift */,
+				064245372C86F85700C9134D /* SearchView.swift */,
 				064244FE2C85804400C9134D /* Assets.xcassets */,
 				064245002C85804400C9134D /* Preview Content */,
 			);
@@ -112,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				064245202C8599DA00C9134D /* MBTIModel.swift */,
+				0642453E2C86FA7400C9134D /* UpbitModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,6 +131,14 @@
 				064245232C859B7F00C9134D /* ButtonWrapper.swift */,
 			);
 			path = Wrapper;
+			sourceTree = "<group>";
+		};
+		0642453B2C86F9A700C9134D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				064245392C86F9A300C9134D /* UpbitAPI.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,12 +217,15 @@
 				064245122C85858800C9134D /* JoinView.swift in Sources */,
 				0642451A2C85948A00C9134D /* MainView.swift in Sources */,
 				064245162C858A0A00C9134D /* ProfileImage.swift in Sources */,
+				0642453A2C86F9A300C9134D /* UpbitAPI.swift in Sources */,
 				064245282C859C0900C9134D /* profileSettingView.swift in Sources */,
 				064245182C8592CD00C9134D /* CameraProfile.swift in Sources */,
 				064245142C85895000C9134D /* Profile.swift in Sources */,
+				064245382C86F85700C9134D /* SearchView.swift in Sources */,
 				0642450D2C8580D400C9134D /* OnboardingView.swift in Sources */,
 				064245102C8583DD00C9134D /* BaseButton.swift in Sources */,
 				064245242C859B7F00C9134D /* ButtonWrapper.swift in Sources */,
+				0642453F2C86FA7400C9134D /* UpbitModel.swift in Sources */,
 				064244FB2C85804200C9134D /* SwiftUIPracticeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
